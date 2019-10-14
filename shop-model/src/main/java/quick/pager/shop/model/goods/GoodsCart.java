@@ -19,11 +19,6 @@ public class GoodsCart extends Model {
      */
     private Long userId;
     /**
-     * 购买商品购物车Id 与订单表一一对应<br />
-     * 与购物车表一对多关系
-     */
-    private Long buyCartId;
-    /**
      * 购买的商品
      */
     private Long goodsId;

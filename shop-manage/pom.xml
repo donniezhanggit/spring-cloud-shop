@@ -28,14 +28,13 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.cloud</groupId>
-                    <artifactId>spring-cloud-netflix-core</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
         </dependency>
 
         <dependency>
@@ -56,7 +55,6 @@
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>1.3.2</version>
         </dependency>
 
         <dependency>
@@ -67,6 +65,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-stream-kafka</artifactId>
         </dependency>
 
         <dependency>
@@ -124,13 +127,24 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-alibaba-seata</artifactId>
-            <version>0.9.0.RELEASE</version>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
             <exclusions>
                 <exclusion>
                     <groupId>io.seata</groupId>
                     <artifactId>seata-spring</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.ctrip.framework.apollo</groupId>
+                    <artifactId>apollo-client</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.ctrip.framework.apollo</groupId>
+                    <artifactId>apollo-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.ecwid.consul</groupId>
+                    <artifactId>consul-api</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -160,19 +174,19 @@
         <dependency>
             <groupId>quick.pager</groupId>
             <artifactId>shop-model</artifactId>
-            <version>${shop.version}</version>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
             <groupId>quick.pager</groupId>
             <artifactId>shop-common</artifactId>
-            <version>${shop.version}</version>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
             <groupId>quick.pager</groupId>
             <artifactId>shop-client-feign</artifactId>
-            <version>${shop.version}</version>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>

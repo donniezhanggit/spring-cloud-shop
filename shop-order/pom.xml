@@ -31,14 +31,13 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.cloud</groupId>
-                    <artifactId>spring-cloud-netflix-core</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
         </dependency>
 
         <dependency>
@@ -72,8 +71,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-stream-kafka</artifactId>
         </dependency>
 
         <dependency>
@@ -110,13 +109,13 @@
         <dependency>
             <groupId>quick.pager</groupId>
             <artifactId>shop-model</artifactId>
-            <version>${shop.version}</version>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
             <groupId>quick.pager</groupId>
             <artifactId>shop-common</artifactId>
-            <version>${shop.version}</version>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>
@@ -132,7 +131,7 @@
         <dependency>
             <groupId>quick.pager</groupId>
             <artifactId>shop-client-feign</artifactId>
-            <version>${shop.version}</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
